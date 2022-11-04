@@ -7,8 +7,90 @@
     <title>Studenten Servicedesk</title>
     <link rel="shortcut icon" href="sources/afb/favicon.png">
     <link rel="stylesheet" href="sources/style/global.css">
+    <script src="sources/js/loginbuttons.js"></script>
 </head>
 <body>
-    <div class="container"></div>
+    <div class="photocontainer">
+        <img id="_login_Wallpaper" src="sources/afb/_login_wallpaper.png">
+    </div>
+
+    <div id="mainlogin" class="logincontainer div_Show">
+        <div class="headerbox">
+            <h1 id="_headerStyle">Studenten Servicedesk</h1>
+        </div>
+        <div class="parbox">
+            <p id="_paragraphStyle">
+                Welkom bij het login portaal van de Studenten Servicedesk.
+                <br>Vanaf hier kun je inloggen als Student, Begeleider of Docent.
+                <br><br>Als student kun je in en uit clocken.
+                <br>Als begeleider kun je de student beoordelen.
+                <br>Als docent kun je studenten, bedrijven en begeleiders toevoegen.
+            </p>
+        </div>
+        <div class="buttonbox">
+            <button onclick="loginStudent()" id="loginbtn_Student">Inloggen als een Student</button>
+            <button onclick="loginBegeleider()" id="loginbtn_Begeleider">Inloggen als een Begeleider</button>
+            <button onclick="loginDocent()" id="loginbtn_Docent">Inloggen als een Docent</button>
+        </div>
+    </div>
+
+    <div id="login_Student" class="loginPage_Student div_Away">
+        <div class="headerbox">
+            <h1 id="_headerStyle">Studenten Servicedesk</h1>
+        </div>
+        <div class="parbox">
+            <p id="_paragraphStyle">
+                Welkom bij het studenten login portaal van de Studenten Servicedesk.
+                <br>Vanaf hier kun je in en uit clocken tijdens je werkuren. 
+                <br><br>Je kunt ook sugesties / commentaar schrijven over je begeleider
+            </p>
+        </div>
+        <div class="loginbox">
+            <label style="color: var(--fg);" for="uname"><b>Gebruikersnaam</b></label>
+            <input id="loginNaam" type="text" placeholder="Voorbeeld: student" name="uname" required>
+            <br><label style="color: var(--fg);" for="psw"><b>Wachtwoord</b></label>
+            <input id="wwStyle" type="password" placeholder="Voorbeeld: ww123456" name="psw" required>
+        </div>
+            <button onclick="studentgoBack()" class="backButton" id="backButton">Terug</button>
+    </div>
+    <div id="login_Begleider" class="loginPage_Begeleider div_Away">
+        <div class="headerbox">
+            <h1 id="_headerStyle">Studenten Servicedesk</h1>
+        </div>
+        <div class="parbox">
+            <p id="_paragraphStyle">
+                Welkom bij het begelijder login portaal van de Studenten Servicedesk.
+                <br>Vanaf hier kun je de volgende dingen aangeven: 
+                <br><br>Aangeven of de student op tijd aanwezig is, gewerkte dagen en beoordelen.
+            </p>
+        </div>
+        <div class="loginbox">
+            <label style="color: var(--fg);" for="uname"><b>Gebruikersnaam</b></label>
+            <input id="loginNaam" type="text" placeholder="Voorbeeld: student" name="uname" required>
+            <br><label style="color: var(--fg);" for="psw"><b>Wachtwoord</b></label>
+            <input id="wwStyle" type="password" placeholder="Voorbeeld: ww123456" name="psw" required>
+        </div>
+            <button onclick="begleidergoBack()" class="backButton" id="backButton">Terug</button>
+
+    </div>
+    <div id="login_Docent" class="loginPage_Docent div_Away">
+        <div class="headerbox">
+            <h1 id="_headerStyle">Studenten Servicedesk</h1>
+        </div>
+        <div class="parbox">
+            <p id="_paragraphStyle">
+                Welkom bij het docenten login portaal van de Studenten Servicedesk.
+                <br>Vanaf hier kun je leerlingen regristeren en hun permissies wijzigen 
+                <br><br>Je kunt ook stagebedrijven en begeleiders regristeren. 
+            </p>
+        </div>
+        <div class="loginbox">
+            <label style="color: var(--fg);" for="uname"><b>Gebruikersnaam</b></label>
+            <input id="loginNaam" type="text" placeholder="Voorbeeld: student" name="uname" required>
+            <br><label style="color: var(--fg);" for="psw"><b>Wachtwoord</b></label>
+            <input id="wwStyle" type="password" placeholder="Voorbeeld: ww123456" name="psw" required>
+        </div>
+            <button onclick="docentgoBack()" class="backButton" id="backButton">Terug</button>
+    </div>
 </body>
 </html>
