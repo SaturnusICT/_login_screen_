@@ -1,0 +1,21 @@
+@import "color.css";
+@import "../font/Roboto.ttf";
+
+@font-face {
+    font-family: 'Roboto Mono NF';
+    src: url('../font/Roboto.ttf')
+}
+
+* {
+    font-family: Roboto Mono NF;
+    background-color: var(--bg);
+    overflow: hidden;
+}
+
+.container {
+    border: solid 1px var(--bg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg);
+}
