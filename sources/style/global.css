@@ -12,10 +12,153 @@
     overflow: hidden;
 }
 
-.container {
-    border: solid 1px var(--bg);
+body {
+    margin: 0px;
+}
+
+.photocontainer {
+    border: solid 0px;
     position: absolute;
     height: 100%;
-    width: 100%;
-    background-color: var(--bg);
+    width: 60%;
+}
+
+.logincontainer {
+    border: solid 0px;
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    left: 60%;
+
+}
+
+.headerbox {
+    border: solid 0px;
+    height: 20%;
+    width: 90%;
+    position: absolute;
+}
+
+#_headerStyle {
+    font-size: 45px;
+    color: var(--nord10);
+    left: 5%;
+    top: 5%;
+    position: absolute;
+}
+
+#_login_Wallpaper {
+    position: absolute;
+    height: 100%;
+    width: 98%;
+}
+
+.parbox {
+    position: absolute;
+    top: 22%;
+    height: 30%;
+    width: 90%;
+    border: solid 0px;
+    left: 5%;
+}
+
+#_paragraphStyle {
+    color: var(--fg);
+    font-size: 14px;
+}
+
+.buttonbox {
+    position: absolute;
+    top: 55%;
+    height: 30%;
+    width: 60%;
+    left: 5%;
+}
+
+#loginbtn_Student {
+    color: var(--nord10);;
+    border: 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+#loginbtn_Begeleider {
+    color: var(--nord10);;
+    border: 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+#loginbtn_Docent {
+    color: var(--nord10);;
+    border: 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.loginPage_Body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.div_Away {
+    display: none;
+}
+
+.div_Show {
+    display: block;
+}
+
+.loginPage_Student {
+    position: absolute;
+    left: 60%;
+    height: 100%;
+    width: 40%;
+}
+
+.loginPage_Begeleider {
+    position: absolute;
+    left: 60%;
+    height: 100%;
+    width: 40%;
+}
+
+.loginPage_Docent {
+    position: absolute;
+    left: 60%;
+    height: 100%;
+    width: 40%;
+}
+
+.loginbox {
+    position: absolute;
+    top: 55%;
+    height: 30%;
+    left: 5%;
+    width: 80%;
+    border: 0px solid;
+
+}
+
+#loginNaam {
+    position: absolute;
+    left: 30%;
+    border-color: var(--nord10);
+    color: var(--fg);
+}
+
+#wwStyle {
+    position: inherit;
+    left: 30%;
+    border-color: var(--nord10);
+    color: var(--fg);
+}
+
+.backButton {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 0px;
+    color: var(--fg);
+    cursor: pointer;
+    font-size: 18px;
 }
